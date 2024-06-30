@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock-paper-scissors</title>
-    <script src="javascript.js"></script>
 </head>
 <body>
+    <h1>This is Rock-Paper-Scissors.</h1>
+    <p></p>
+    <h1>Once you typed in your answer, right click and press the inspect element button, then view the console to see if you won.</h1>
+    <p></p>
+    <h1>To replay, refresh the page.</h1>
     <script>
         function game(answer){
-            a=Math.floor(Math.random() * 3);
+            const a=Math.floor(Math.random() * 3);
+            let b;
             if(answer === "Rock"){
                 b=0;
             }
@@ -43,7 +48,8 @@
             }
         }
 
-        let answer = parseInt(prompt("Please type one, Rock, Paper, or Scissors: "));
+        const answer = prompt("Please type one EXACTLY how it is; Rock, Paper, or Scissors: ");
+        game(answer);
     </script>
     
 </body>
