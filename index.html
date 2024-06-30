@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissors</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <script>
+        function game(answer){
+            a=Math.floor(Math.random() * 3);
+            if(answer === "Rock"){
+                b=0;
+            }
+            if(answer === "Paper"){
+                b=1;
+            }
+            if(answer === "Scissors"){
+                b=2;
+            }
+
+            if(a==b){
+                console.log("ITS A TIE!")
+            }
+            if(a==0 && b==2){
+                console.log("YOU LOSE!")
+            }
+            if(a==1 && b==0){
+                console.log("YOU LOSE!")
+            }
+            if(a==2 && b==1){
+                console.log("YOU LOSE!")
+            }
+            if(a==0 && b==1){
+                console.log("YOU WIN!")
+            }
+            if(a==1 && b==2){
+                console.log("YOU WIN!")
+            }
+            if(a==2 && b==0){
+                console.log("YOU WIN!")
+            }
+        }
+
+        let answer = parseInt(prompt("Please type one, Rock, Paper, or Scissors: "));
+    </script>
+    
+</body>
+</html>
